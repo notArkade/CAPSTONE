@@ -29,7 +29,7 @@ export function Home() {
       <h2 id="map-heading" className="sr-only">Map explorer</h2>
       <MapControls regions={regions} selectedRegion={selectedRegion} onRegionChange={setSelectedRegion} />
       {apiState === 'loading' && <p className="mt-3 text-sm text-slate-500">Checking the EquiMap backend…</p>}
-      {apiState === 'unavailable' && <p className="mt-3 rounded-md bg-amber-50 px-3 py-2 text-sm text-amber-800">Backend unavailable. The map remains usable with the initial region configuration.</p>}
+      {/* {apiState === 'unavailable' && <p className="mt-3 rounded-md bg-amber-50 px-3 py-2 text-sm text-amber-800">Backend unavailable. The map remains usable with the initial region configuration.</p>} */}
       <div className="mt-5"><MapView selectedRegion={selectedRegion} /></div>
       <div className="mt-5 rounded-xl border border-slate-200 bg-white p-4 text-sm text-slate-600">
         <p className="font-semibold text-slate-800">Future accessibility legend <span className="font-normal text-slate-500">— placeholder only; no scores are shown.</span></p>
@@ -40,6 +40,6 @@ export function Home() {
         </div>
       </div>
     </section>
-    <section id="about" className="mt-14 border-t border-slate-200 pt-8 text-sm leading-6 text-slate-600"><h2 className="text-lg font-semibold text-slate-900">About this foundation</h2><p className="mt-2">This release establishes a map, regional API, and PostGIS-ready database schema. It does not make claims about service availability or inequality.</p></section>
+    {/* <section id="about" className="mt-14 border-t border-slate-200 pt-8 text-sm leading-6 text-slate-600"><h2 className="text-lg font-semibold text-slate-900">About this foundation</h2><p className="mt-2">This release establishes a map, regional API, and PostGIS-ready database schema. It does not make claims about service availability or inequality.</p></section> */}
   </main>
 }

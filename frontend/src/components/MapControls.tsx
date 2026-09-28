@@ -16,10 +16,10 @@ export function MapControls({ regions, selectedRegion, onRegionChange }: Props) 
       </select>
       <label className="sr-only" htmlFor="layer">Future analytical layer</label>
       <select id="layer" disabled aria-label="Future analytical layer, unavailable in version 0.1" className="cursor-not-allowed rounded-lg border border-slate-200 bg-slate-100 px-3 py-2.5 text-sm text-slate-500">
-        {LAYERS.map((layer) => <option key={layer}>{layer}{layer === 'All' ? ' layers (coming soon)' : ' (coming soon)'}</option>)}
+        {LAYERS.map((layer) => <option key={layer}>{layer}{layer === 'All' ? ' layers ' : ' '}</option>)}
       </select>
       <label className="sr-only" htmlFor="search">Search area</label>
-      <input id="search" type="search" placeholder="Search area (coming soon)" disabled className="cursor-not-allowed rounded-lg border border-slate-200 bg-slate-100 px-3 py-2.5 text-sm text-slate-500" />
+      <input id="search" type="search" placeholder="Search area" disabled className="cursor-not-allowed rounded-lg border border-slate-200 bg-slate-100 px-3 py-2.5 text-sm text-slate-500" />
     </div>
   )
 }
